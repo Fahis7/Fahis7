@@ -1,60 +1,8 @@
-<h1 align="center">Hi there, I'm Fahis 👋</h1>
-<h3 align="center">Aspiring Frontend Developer | React Learner | Fitness Enthusiast</h3>
+👋 Hi, I'm Mohammed Fahis — an AI Engineer and Full Stack Developer based in Dubai, UAE.
+I build production-ready SaaS platforms that integrate LLMs like Groq Llama 4 Vision and Claude AI into real-world workflows — from vision-based maintenance triage and RAG-powered chatbots to automated CV parsing and smart pricing engines. Recent projects include PropAI OS, a multi-tenant property management platform for the Dubai market, and Seek & Sync, a live HR consultancy platform for an Abu Dhabi client.
+My stack: Python · Django · FastAPI · React · Next.js · PostgreSQL · Docker · AWS
 
----
+My AI toolkit: Groq · Claude AI · OpenAI · pgvector · LangChain · Hugging Face
+🎯 Selected for the One Million Prompters Dubai 2025 programme by the Dubai Future Foundation.
 
-### 💡 About Me
-- 🎓 Passionate self-learner focused on frontend development  
-- 💻 Currently sharpening my skills in *React.js* and *JavaScript Advanced Concepts*  
-- 🌱 Goal: Become a job-ready **React Developer** and build real-world projects  
-- ❤ Love solving problems, staying productive, and avoiding sugar 😎  
-
----
-
-## 🛠 My Development Toolkit
-
-<div align="center">
-  
-  | Frontend  | Tools & Others       |
-
-  <p align="center">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,git,github,vscode&theme=light&perline=4" alt="Skill icons" />
-  </p>
-</div>
-
----
-
-## 📊 GitHub Insights
-
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=Fahis7&show_icons=true&count_private=true&theme=github_dark&hide=issues&border_radius=12&title_color=58A6FF&icon_color=58A6FF" width="95%" alt="GitHub Stats" />
-    </td>
-   <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=Fahis7&show=commits&theme=github_dark&count_private=true&custom_title=My+Commit+Breakdown&border_radius=12" width="95%" alt="Commit Stats" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Fahis7&theme=github-compact&hide_border=true&area=true&radius=12" width="95%" alt="Contribution Graph" />
-</div>
-
-<br/>
-
----
-
-### 📫 How to Reach Me
-- 📩 Email:  [fahismt777@gmail.com](mailto:fahismt777@gmail.com)
-- 💼 LinkedIn: [Fahis LinkedIn](https://www.linkedin.com/in/fahismt)
-- 🌐 Portfolio: [My Portfolio](https://fahis7.github.io/portfolio/)
-- 📷 Instagram: [@fahls__](https://www.instagram.com/fahls__/)
-
----
-
-###  Thanks for visiting my profile!
-_“Code is like fitness — consistency is the key.”_
-
+📬 Open to full-time AI/Full Stack roles in the UAE — reach me at muhdfahis.aidev@gmail.com
