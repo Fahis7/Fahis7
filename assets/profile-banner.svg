@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+<title id="title">Mohammed Fahis — AI Full Stack Developer and Lead Engineer</title>
+<desc id="desc">Building intelligence into real business software. Dubai, UAE. Applied AI, full stack, production systems.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101820"/><stop offset="1" stop-color="#080c11"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+</defs>
+<rect width="1280" height="440" rx="20" fill="url(#bg)"/>
+<rect width="1280" height="440" rx="20" fill="url(#grid)"/>
+<path d="M64 62H1216" stroke="#c8ab70" stroke-opacity=".35"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="64" y="43" fill="#c8ab70" font-size="12" letter-spacing="3">FAHIS / ENGINEERING</text>
+<text x="1216" y="43" text-anchor="end" fill="#a8b1bb" font-size="12" letter-spacing="2">DUBAI, UAE</text>
+<text x="60" y="157" fill="#f3f0e8" font-size="74" font-weight="700" letter-spacing="-3">Mohammed Fahis.</text>
+<text x="64" y="222" fill="#c8ab70" font-size="34">Building intelligence into</text>
+<text x="64" y="267" fill="#c8ab70" font-size="34">real business software.</text>
+<text x="64" y="320" fill="#a8b1bb" font-size="16">AI Full Stack Developer / Lead Engineer</text>
+<path d="M64 365H1216" stroke="#c8ab70" stroke-opacity=".35"/>
+<text x="64" y="402" fill="#d3d8df" font-size="12" letter-spacing="2">APPLIED AI</text>
+<text x="260" y="402" fill="#d3d8df" font-size="12" letter-spacing="2">FULL STACK</text>
+<text x="465" y="402" fill="#d3d8df" font-size="12" letter-spacing="2">PRODUCTION SYSTEMS</text>
+<text x="1216" y="402" text-anchor="end" fill="#c8ab70" font-size="12" letter-spacing="2">IDEA → ARCHITECTURE → SHIPPED</text>
+</g>
+<g fill="none" stroke="#c8ab70" stroke-opacity=".35">
+<rect x="990" y="119" width="156" height="156" rx="24" transform="rotate(12 1068 197)"/>
+<rect x="1006" y="135" width="124" height="124" rx="19" transform="rotate(12 1068 197)"/>
+<path d="M1034 197h68m-34-34v68" stroke-width="2"/>
+<circle cx="1068" cy="197" r="12" fill="#c8ab70" fill-opacity=".15"/>
+</g>
+</svg>
