@@ -1,152 +1,128 @@
 <div align="center">
 
-<img src="./assets/profile-banner.svg" width="100%" alt="Mohammed Fahis — AI Full Stack Developer and Lead Engineer. Building intelligence into real business software." />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.png">
+  <img src="./assets/banner-light.png" width="100%" alt="Mohammed Fahis, AI Full Stack Developer and Lead Engineer in Dubai. One engineer. Idea to production.">
+</picture>
 
-<br />
+[Portfolio](https://fahis7.github.io/Fahis-portfolio/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/mohammed-fahis-mt/) &nbsp;·&nbsp; [Email](mailto:muhdfahis.aidev@gmail.com) &nbsp;·&nbsp; [WhatsApp](https://wa.me/971542894979) &nbsp;·&nbsp; [CV](https://fahis7.github.io/Fahis-portfolio/cv.html)
 
-**AI FULL STACK DEVELOPER · LEAD ENGINEER · DUBAI, UAE**
-
-I turn complex business workflows into production software — with AI where it makes a difference.
-
-[Portfolio](https://fahis7.github.io/Fahis-portfolio/) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/mohammed-fahis-mt/) &nbsp; / &nbsp; [Email](mailto:muhdfahis.aidev@gmail.com) &nbsp; / &nbsp; [GitHub](https://github.com/Fahis7)
-
-<br />
-
-<img src="./assets/impact.svg" width="100%" alt="1,000+ profiles screened, three UAE platforms shipped, 33 RLS-protected tables, and 1,255 regression tests." />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/impact-dark.png">
+  <img src="./assets/impact-light.png" width="100%" alt="6 builds, 5 live, 1,000+ profiles screened, 1,255 tests passing.">
+</picture>
 
 </div>
 
----
-x
-## From business problem to working product.
+<br>
 
-I'm **Mohammed Fahis**, an AI Full Stack Developer and Lead Engineer based in Dubai. I build across the full product lifecycle: data models, APIs, interfaces, AI workflows, infrastructure, and deployment.
+I'm **Mohammed Fahis**, an AI Full Stack Developer and Lead Engineer in Dubai. I own products end to end: data models, APIs, interfaces, AI workflows and deployment.
 
-My work spans **compliance, property management, recruitment, and e-commerce**. The common thread is making complex operations easier to run: extracting identity data from documents, searching business knowledge, matching candidates to roles, and building the systems around those capabilities.
+Right now I lead engineering at **AM Audit**, where I designed, built and shipped **AXIS KYC**, a multi-tenant AML/KYC platform used by UAE compliance firms.
 
-Currently, I lead engineering at **AM Audit — Abdulla Al Mulla Auditing & Accounting**, where I designed, built, and deployed **AXIS KYC**, a multi-tenant AML/KYC platform used across multiple UAE compliance firms.
+> The model suggests. A human decides. I build the permissions, data isolation and workflows that make AI usable in serious software.
 
-> The AI feature is one part of the product. I build the permissions, data isolation, background jobs, and user experience that make it usable.
+<br>
 
-## 01 / Flagship work
+## 01 · Work
 
-### AXIS KYC
-**Multi-tenant AML/KYC compliance platform · Sole Engineer / Lead Engineer**
+### AXIS KYC &nbsp;<sub>`LIVE` · Sole engineer · AM Audit</sub>
 
-[Visit platform ↗](https://app2.axiskyc.ae)
+Multi-tenant compliance SaaS for UAE firms: identity extraction, sanctions screening, risk scoring, MLRO review, training and audit in one system. &nbsp;[**axiskyc.ae ↗**](https://axiskyc.ae)
 
-A compliance platform that brings identity verification, sanctions screening, risk assessment, training, and audit workflows into one system.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/axis-flow-dark.png">
+  <img src="./assets/axis-flow-light.png" width="100%" alt="AXIS KYC flow: document in, AI extraction, validation, screening, risk and review. Built on RLS across 33 tables, 3 database roles, 4 role-based portals and 1,255 regression tests.">
+</picture>
 
-| Engineering challenge | What I built |
+| Challenge | What I built |
 | :--- | :--- |
-| Keep each firm's data isolated | PostgreSQL Row-Level Security across **33 tables**, with **three database roles** for structural tenant isolation. |
-| Support different compliance responsibilities | **Four role-based portals** for Organisation, Admin, Broker, and External Compliance Officer, including multi-company access and JWT tenant switching. |
-| Reduce manual identity entry | Passport and Emirates ID extraction with **Claude Vision**, forced tool use, **Tesseract fallback**, and **MRZ validation** — extracting **nine fields in 4–7 seconds**. |
-| Connect screening and risk workflows | Sanctions.io integration, sanctions and PEP checks, the UAE Local Terrorist List, AI-assisted adverse media analysis, and a **six-factor weighted risk engine**. |
-| Strengthen release confidence | Addressed a **16-finding pre-launch security audit**, backed by **1,255 regression tests**, in-memory JWT handling, transaction atomicity, idempotency guards, and rate limiting on paid API endpoints. |
-| Support day-to-day compliance operations | EDD workflows, audit document management, AI quizzes inside training videos, QR-verifiable certificates, and bilingual PDF generation. |
+| Keep each firm's data apart | PostgreSQL Row-Level Security on **33 tables** with **3 database roles** |
+| Different jobs, one platform | **4 role-based portals**, multi-company access and JWT tenant switching |
+| No more manual ID entry | Claude Vision OCR with Tesseract fallback and MRZ checks: **9 fields in 4 to 7 s** |
+| Screening that holds up | **5 sanctions lists**, PEP and adverse media, plus a **6-factor risk engine** |
+| Safe to ship | **16-finding security audit**, all fixed, backed by **1,255 regression tests** |
 
-**Impact:** 1,000+ screened profiles across multiple UAE compliance firms.
+`Django / DRF` `PostgreSQL RLS` `Next.js` `React 19` `TypeScript` `Claude Vision` `Celery` `Redis` `Docker` `GitHub Actions`
 
-<img src="./assets/axis-workflow.svg" width="100%" alt="Illustrative AXIS KYC workflow: document input, AI extraction, validation, and compliance screening, supported by tenant isolation and role-based access." />
+<br>
 
-`Python` `Django / DRF` `PostgreSQL RLS` `Next.js 16` `React 19` `TypeScript` `Tailwind CSS` `Claude Vision` `Celery` `Redis` `Docker` `GitHub Actions`
+### RefurbOps &nbsp;<sub>`LIVE` · Independent product</sub>
 
-### PropAI OS
-**AI-powered property management · Full Stack AI Developer · Zero Accounting, Dubai**
+Tracks used phones and laptops from intake to sale, and sells each unit on several marketplaces without overselling. &nbsp;[**Live ↗**](https://refurbops.vercel.app)
 
-[Explore project ↗](https://propai-os.up.railway.app)
+- Oversell-safe sync across **3 marketplaces**: first order wins, the unit delists everywhere
+- AI photo grading and a plain-English ops assistant, with a human making the call
+- IMEI intake with TAC lookup and Luhn check, **150+ tests** and CI on every push
 
-Built a multi-tenant property management product with three AI workflows connected to everyday operations:
+<br>
 
-- **Photo → maintenance ticket:** Llama 4 Vision analyses damage, assigns priority, and drafts the ticket.
-- **Market data → rent guidance:** Llama 3.3 70B supports rental benchmarking with confidence scores.
-- **Property knowledge → answers:** A RAG concierge uses pgvector retrieval to answer questions about leases, payments, and building rules.
+### PropAI OS &nbsp;<sub>`DEMO OFFLINE` · Abu Dhabi</sub>
 
-The surrounding system includes **four portals, eight authentication roles, asynchronous jobs, and five Docker Compose services**.
+Multi-tenant property SaaS: four role-based portals, async jobs and five Docker services.
 
-`Django 5` `React 19` `Groq` `Llama 4 Vision` `Llama 3.3 70B` `pgvector` `Celery` `Redis` `Docker` `Railway`
+- **Photo to ticket:** Groq Llama 4 Vision triages maintenance photos and routes the job
+- **Market data to rent price:** smart pricing on live market data
+- **Documents to answers:** a RAG concierge on pgvector and Llama 3.3 70B
 
-### Seek & Sync
-**HR consultancy platform · Frontend Developer & AI Integration · Abu Dhabi**
+`Django 5` `React 19` `PostgreSQL` `pgvector` `Groq` `Celery` `Redis` `Docker` `Railway`
 
-[Explore project ↗](https://seek-and-sync.netlify.app)
+<br>
 
-Shipped a recruitment platform connecting a polished candidate experience with AI-assisted recruiter workflows.
+### More builds
 
-- **CV parsing:** Claude Haiku extracts structured candidate information from uploaded CVs.
-- **Semantic matching:** Embeddings stored in Supabase support matching candidates to vacancies.
-- **Recruiter updates:** Resend delivers automated alerts with AI-written summaries, supported by unread badges and WhatsApp contact actions.
-
-`Next.js 14` `TypeScript` `Tailwind CSS` `Claude Haiku` `Supabase` `pgvector` `Resend` `Netlify`
-
-<details>
-<summary><strong>Also built: Horologie — full-stack e-commerce</strong></summary>
-
-<br />
-
-[Explore project ↗](https://horologiee.vercel.app)
-
-Built a luxury e-commerce platform with JWT and Google OAuth authentication, Firebase MFA, Cloudinary media delivery, and a real-time analytics dashboard powered by Django ORM aggregations.
-
-`Django REST Framework` `React` `PostgreSQL` `Firebase MFA` `Google OAuth` `Cloudinary`
-
-</details>
-
-## 02 / Experience
-
-| When | Role & organisation | Focus |
+| Project | What it is | Stack |
 | :--- | :--- | :--- |
-| **2026–Present** | **AI Full Stack Developer / Lead Engineer** · AM Audit, UAE | Sole engineering ownership of AXIS KYC, from architecture to production. |
-| **May–Jun 2026** | **Full Stack AI Developer** · PropAI OS / Zero Accounting, Dubai | Vision AI, rental intelligence, RAG, and multi-tenant property workflows. |
-| **Feb–Apr 2026** | **Frontend Developer & AI Integration** · Seek & Sync, Abu Dhabi | Recruitment experience, CV parsing, semantic matching, and recruiter automation. |
-| **Apr 2025–Jan 2026** | **Full Stack Developer Intern** · Bridgeon Solutions LLP, Kerala | Django APIs, authentication, AWS deployment, and GitHub Actions delivery pipelines. |
+| [**Zero Accounting ↗**](https://zeroaccounting.ae) | Live bilingual English/Arabic site for an FTA-approved tax firm in Abu Dhabi | `React` `Vite` `react-i18next RTL` `Framer Motion` `Vercel` |
+| [**Seek & Sync ↗**](https://seek-and-sync.netlify.app) | Live recruiting platform: Claude Haiku CV parsing and semantic job matching | `Next.js 14` `TypeScript` `Supabase` `pgvector` `Netlify` |
+| [**Horologie ↗**](https://horologiee.vercel.app) | Luxury watch store with three-layer auth and a live analytics dashboard | `Django REST` `React` `PostgreSQL` `Firebase MFA` `Cloudinary` |
 
-## 03 / Engineering toolkit
+<br>
 
-| Area | Technologies & capabilities |
+## 02 · Experience
+
+| When | Role | Focus |
+| :--- | :--- | :--- |
+| **2026 to now** | **AI Full Stack Developer / Lead Engineer** · AM Audit, UAE | Sole engineer of AXIS KYC, from architecture to production |
+| **Nov 2026** | **AI Full Stack Developer** · RefurbOps, Dubai | Independent product: AI grading, ops assistant, marketplace sync |
+| **Jun 2026** | **Frontend Developer** · Zero Accounting, Abu Dhabi | Bilingual site with full RTL, mobile first |
+| **May to Jun 2026** | **Full Stack AI Developer** · PropAI OS, Abu Dhabi | Vision AI, rent pricing and a RAG concierge |
+| **Feb to Apr 2026** | **Frontend Developer & AI Integration** · Seek & Sync, Abu Dhabi | CV parsing, vector matching and recruiter alerts |
+| **2025** | **Full Stack Developer** · Horologie | E-commerce built from scratch, auth and analytics |
+
+<br>
+
+## 03 · Toolkit
+
+| Area | Tools |
 | :--- | :--- |
-| **Applied AI** | Claude Vision & Haiku · Groq / Llama · OpenAI · RAG · Embeddings · Semantic retrieval · Document OCR · MRZ validation |
-| **Backend** | Python · Django · Django REST Framework · FastAPI · REST APIs · Celery · Redis · Webhooks |
-| **Frontend** | TypeScript · JavaScript · React · Next.js App Router · Tailwind CSS · SWR · Arabic RTL · Bilingual interfaces |
-| **Data & access** | PostgreSQL · Row-Level Security · pgvector · Supabase · Multi-tenancy · RBAC · JWT · OAuth2 |
-| **Delivery & operations** | Docker · Docker Compose · GitHub Actions · AWS EC2 / RDS · DigitalOcean · Railway · Vercel · Nginx · Gunicorn · Sentry |
+| **Applied AI** | Claude Vision & Haiku · Groq / Llama · RAG · Embeddings · pgvector · Document OCR · MRZ validation |
+| **Backend** | Python · Django · DRF · FastAPI · Celery · Redis · Webhooks · Microservices |
+| **Frontend** | TypeScript · React · Next.js · Vite · Tailwind CSS · Framer Motion · Arabic RTL |
+| **Data & access** | PostgreSQL · Row-Level Security · Supabase · Multi-tenancy · RBAC · JWT · OAuth2 |
+| **Delivery** | Docker · GitHub Actions · AWS EC2 / RDS · DigitalOcean · DO Spaces · Railway · Vercel · Nginx · Sentry |
+| **How I build** | Claude Code (plan, review, verify) · AI tested on real runs, not demos |
 
-<details>
-<summary><strong>What I care about when building</strong></summary>
+<br>
 
-<br />
+## 04 · Foundation
 
-- **Data boundaries:** tenant isolation belongs in the database as well as the application.
-- **Practical AI:** connect model output to a useful workflow, with validation and fallbacks.
-- **Reliable operations:** protect repeated actions with idempotency and keep slow work in background jobs.
-- **Complete experiences:** support the people using the product through clear interfaces, role-aware access, and bilingual workflows.
-- **Release confidence:** use regression coverage and security review to support changes in production.
+**Bachelor of Computer Application** · Calicut University · 2022 to 2025<br>
+**Full Stack Developer Intern** · Bridgeon Solutions, Kerala · Apr 2025 to Jan 2026<br>
+**One Million Prompters · Dubai** · Dubai Future Foundation programme · 2025<br>
+**Python Fullstack Developer** certification · Django · DRF · React<br>
+**Languages:** English (fluent) · Malayalam (fluent)
 
-</details>
-
-## 04 / Foundation
-
-**Bachelor of Computer Application** · Calicut University · 2022–2025  
-**One Million Prompters — Dubai** · Selected for the Dubai Future Foundation programme · 2025  
-**Python Fullstack Developer Certification** · Django · DRF · React
-
-**Languages:** English · Malayalam
-
----
+<br>
 
 <div align="center">
 
-### Have a complex workflow worth simplifying?
+### Let's build something.
 
-I'm interested in **AI engineering, full-stack development, and SaaS product engineering** opportunities.
+Open to **AI engineering, full-stack and SaaS product** roles, and freelance builds.
 
-**[Let's talk →](mailto:muhdfahis.aidev@gmail.com)** &nbsp; · &nbsp; [WhatsApp](https://wa.me/971542894979)
+[**Start a chat ↗**](https://wa.me/971542894979) &nbsp;·&nbsp; [Email](mailto:muhdfahis.aidev@gmail.com) &nbsp;·&nbsp; [Portfolio](https://fahis7.github.io/Fahis-portfolio/)
 
-[LinkedIn](https://www.linkedin.com/in/mohammed-fahis-mt/) &nbsp; · &nbsp; [Portfolio](https://fahis7.github.io/Fahis-portfolio/) &nbsp; · &nbsp; Dubai, UAE
-
-<br />
-
-<sub>Built around real workflows. Designed for the people who use them.</sub>
+<sub>Dubai, UAE</sub>
 
 </div>
