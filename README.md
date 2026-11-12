@@ -105,7 +105,13 @@ Multi-tenant property SaaS: four role-based portals, async jobs and five Docker 
 
 <br>
 
-## 04 · Foundation
+## 04 · Activity
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg"><img src="./assets/stats-light.svg" width="100%" alt="GitHub activity: contributions, streaks, contribution heatmap, top languages and the last 30 days."></picture>
+
+<br>
+
+## 05 · Foundation
 
 **Bachelor of Computer Application** · Calicut University · 2022 to 2025<br>
 **Full Stack Developer Intern** · Bridgeon Solutions, Kerala · Apr 2025 to Jan 2026<br>
