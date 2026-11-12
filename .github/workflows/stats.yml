@@ -29,6 +29,8 @@ jobs:
           GITHUB_LOGIN: ${{ github.repository_owner }}
         run: node scripts/github-stats.mjs
 
+      # The script leaves the SVGs untouched when only the "UPDATED <date>" line would change,
+      # so this commits only when the stats themselves changed.
       - name: Commit if changed
         run: |
           if git diff --quiet -- assets/stats-dark.svg assets/stats-light.svg; then

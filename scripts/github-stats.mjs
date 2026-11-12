@@ -5,7 +5,7 @@
 // No dependencies: Node 20+ built-in fetch only.
 // If the API call fails, nothing is written and the process exits with code 1.
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -148,8 +148,8 @@ const fmtDate = (iso) => {
   return `${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}`;
 };
 
-function label(x, y, text, fill, { size = 12, anchor = 'start', spacing = 1.6, weight = 400 } = {}) {
-  return `<text x="${r1(x)}" y="${r1(y)}" fill="${fill}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}">${esc(String(text).toUpperCase())}</text>`;
+function label(x, y, text, fill, { size = 12, anchor = 'start', spacing = 1.6, weight = 400, id = '' } = {}) {
+  return `<text${id ? ` id="${id}"` : ''} x="${r1(x)}" y="${r1(y)}" fill="${fill}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}">${esc(String(text).toUpperCase())}</text>`;
 }
 
 // LED dot number. s scales the DotText grid (x pitch 5, y pitch 4, radius 1.55).
@@ -260,7 +260,7 @@ function render(t, s, updated) {
 <rect width="${W}" height="${H}" rx="16" fill="${t.bg}"/>
 <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="15.5" fill="none" stroke="${t.line}"/>
 ${label(40, 46, 'GitHub activity · last 12 months', t.text, { size: 13, spacing: 2.2, weight: 500 })}
-${label(W - 40, 46, updated, t.accent, { size: 13, anchor: 'end', spacing: 2.2, weight: 500 })}
+${label(W - 40, 46, updated, t.accent, { size: 13, anchor: 'end', spacing: 2.2, weight: 500, id: 'updated' })}
 <line x1="40" x2="${W - 40}" y1="66" y2="66" stroke="${t.line}"/>
 ${statBlocks}
 <line x1="40" x2="${W - 40}" y1="198" y2="198" stroke="${t.line}"/>
@@ -293,7 +293,19 @@ async function main() {
 
   const out = Object.fromEntries(Object.entries(THEMES).map(([k, t]) => [k, render(t, s, updated)]));
   mkdirSync(join(ROOT, 'assets'), { recursive: true });
-  for (const [k, svg] of Object.entries(out)) writeFileSync(join(ROOT, 'assets', `stats-${k}.svg`), svg);
+  // Only rewrite a file when the stats changed. The "UPDATED <date>" line is ignored in the
+  // comparison, so the card keeps the date of the last real change and the workflow skips the commit.
+  const withoutDate = (svg) => svg.replace(/<text id="updated"[^>]*>[^<]*<\/text>/, '');
+  for (const [k, svg] of Object.entries(out)) {
+    const file = join(ROOT, 'assets', `stats-${k}.svg`);
+    let old = null;
+    try { old = readFileSync(file, 'utf8'); } catch {}
+    if (old !== null && withoutDate(old) === withoutDate(svg)) {
+      console.log(`stats-${k}.svg: no stat changes, kept as is.`);
+      continue;
+    }
+    writeFileSync(file, svg);
+  }
 
   console.log(JSON.stringify({
     login: LOGIN,
